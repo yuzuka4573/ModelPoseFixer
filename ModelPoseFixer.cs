@@ -162,7 +162,7 @@ public class ExtendedEditor : Editor
     {
         base.OnInspectorGUI();
 
-        VRMModelPoseFixer fixer = target as VRMModelPoseFixer;
+        ModelPoseFixer fixer = target as ModelPoseFixer;
 
         EditorGUILayout.HelpBox("1. このInspector上で両腕の根本ボーンをアタッチする\r\n2.\"Object Getter\"ボタンを押してボーンを取得\r\n3.\"Model pose Fixer\"ボタンを押してモデルのポーズを変える\r\n(isForcedT が True でT, Falseでangleで指定した角度でAポーズを取ります)\r\n編集後はUniVRMの書き出しと同じ方法で出力\r\n\r\n\"ExcludedBone\"の配列内に角度変更したくないオブジェクトの親を入れておくと、ポーズ変更したときに角度が修正されなくなります", MessageType.None);
         if (GUILayout.Button("Object Getter"))
