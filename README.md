@@ -2,7 +2,7 @@
 一般的HumanoidのAスタンス&lt;->TスタンスをInspector上で一括変更できるScript,VRMモデルのポース直しに  
 # How to Use  
 [![Image from Gyazo](https://i.gyazo.com/f22c214f8645c41f3d75a7a4389a58c9.png)](https://gyazo.com/f22c214f8645c41f3d75a7a4389a58c9)  
-適当なGameObjectにアタッチして両腕の根本のGameObjectをLeft / Right Arm Rootにアタッチする  
+適当なGameObjectにModelPoseFixer.csをアタッチして両腕の根本のGameObjectをLeft / Right Arm Rootにアタッチする  
 "Object Getter"ボタンを押して指定したGameObject以下の小要素全取得  
 設定したいポーズを決める(IsForcedTとAngleを使って)
 "Model pose Fixer"ボタンを押してお好きなポース（Tスタンス/Aスタンス)に変更する  
